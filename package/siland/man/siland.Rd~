@@ -78,10 +78,10 @@ Carpentier, F. and Martin, O.
 \examples{
 #data(dataSiland)
 #data(landSiland)
-#resE=siland(y~conv,land=landSiland,data=dataSiland,sif="exponential",family=gaussian)
+#resE=siland(y~locvar,land=landSiland,data=dataSiland,sif="exponential",family=gaussian)
 #resE
 #resE$AIC
-#resG=siland(y~conv,land=landSiland,data=dataSiland,sif="gaussian",family=gaussian)
+#resG=siland(y~locavr,land=landSiland,data=dataSiland,sif="gaussian",family=gaussian)
 #resG
 #resG$AIC
 }

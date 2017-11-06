@@ -1,5 +1,0 @@
-export("siland","plotsiland","plotcontri")
-import(graphics)
-import(stats)
-import(lme4)
-importFrom("grDevices", "grey", "rainbow")

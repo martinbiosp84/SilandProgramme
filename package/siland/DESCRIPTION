@@ -7,4 +7,4 @@ Author: Carpentier F. and Martin O.
 Maintainer: <olivier.martin@inra.fr>
 Description: Methods to estimate influence of landscape for a response variable.
 License: GPL (>=2.0)
-Depends:base, graphics, stats, lme4, lme
+Depends:base, graphics, stats, lme4, sp, raster, rgdal

@@ -10,7 +10,7 @@ siland is used to fit spatial influence of landscape.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-siland(loc.model, land=NULL, data, initSIF = NULL, sif = "exponential", family = "gaussian", test = TRUE)
+siland(loc.model, land=NULL, data, initSIF = NULL, sif = "exponential", family = "gaussian", test = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

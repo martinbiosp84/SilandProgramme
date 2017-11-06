@@ -9,6 +9,7 @@ Plot locations of observed data and locations of landscape variables. The locati
 }
 \usage{
 plotsiland(res, land, data)
+%%\method{print}{siland}(res,land,data)
 }
 
 %- maybe also 'usage' for other objects documented here.

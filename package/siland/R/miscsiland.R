@@ -1,5 +1,5 @@
 
-print.siland<-function(x)
+print.siland<-function(x,...)
 {
   cat("Local model:\n")
   print(as.formula(x$loc.model),showEnv=F)
@@ -29,9 +29,10 @@ AIC.siland<-function(x)
 }
 
 
-summary.siland<-function(x)
+summary.siland<-function(object,...)
 {
   #data farame summary
+x<-object
   namesland=colnames(x$landcontri)
   nland=length(namesland)
   ncoef=length(x$coeff)
