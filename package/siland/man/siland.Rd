@@ -74,7 +74,9 @@ Carpentier, F. and Martin, O.
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
-
+\references{
+Chandler R. and Hepinstall-Cymerman J. (2016) Estimating the spatial scales of landscape effects on abundance. Landscape ecology, 31: 1383-1394.
+   }
 
 \examples{
 #data(dataSiland)
