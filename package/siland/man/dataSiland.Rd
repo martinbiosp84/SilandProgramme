@@ -41,7 +41,8 @@ points(dataSiland[,c("X","Y")])
 #summary(res)
 #plotsiland(res,landSiland,dataSiland)
 
-#res=siland(loc.model=y~locfac+locvar,land=landSiland,data=dataSiland,sif="exponential",family="gaussian")
+#res=siland(loc.model=y~locfac+locvar,land=landSiland,data=dataSiland,
+#sif="exponential",family="gaussian")
 
 }
 \keyword{datasets}

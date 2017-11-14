@@ -665,7 +665,7 @@ siland<-function(loc.model,land=NULL,data,initSIF=NULL,sif="exponential",family=
   #this datraframe. The location of the obervations have to be given by varible "X" and "Y"
   # check arguments
   
-  
+
   if (is.character(family)) 
   {
     if(!(family%in%c("gaussian","poisson","binomial")))
@@ -781,8 +781,9 @@ siland<-function(loc.model,land=NULL,data,initSIF=NULL,sif="exponential",family=
   
   if(length(land)==1)
   {
-    resoptim=optimize(myfun,interval=c(0,300000))
-    resoptim$par=resoptim$minimum
+    #resoptim=optimize(myfun,interval=c(0,300000))
+    #resoptim$par=resoptim$minimum
+	resoptim=optim(initSIF,myfun)
   }
   
   paramSIF=resoptim$par
