@@ -1,4 +1,6 @@
-export("siland","plotsiland","plotcontri")
+export(siland)
+export(plotsiland)
+export(plotcontri)
 import(graphics)
 import(stats)
 import(lme4)
@@ -6,3 +8,12 @@ import(sp)
 import(rgdal)
 import(raster)
 importFrom("grDevices", "grey", "rainbow")
+
+
+S3method(print, siland)
+S3method(summary, siland)
+export(summary.siland)
+export(print.siland)
+
+
+

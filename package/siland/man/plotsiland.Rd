@@ -26,10 +26,12 @@ plotsiland(res, land, data)
 }
 
 \examples{
-#data(dataSiland)
-#data(landSiland)
-#res=siland(loc.model=y~locfac,land=landSiland,data=dataSiland,sif="exponential",family="gaussian")
-#plotsiland(res,landSiland, dataSiland)
+\donttest{
+data(dataSiland)
+data(landSiland)
+res=siland(loc.model=y~locfac,land=landSiland,data=dataSiland,sif="exponential",family="gaussian")
+plotsiland(res,landSiland, dataSiland)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

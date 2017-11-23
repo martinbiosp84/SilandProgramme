@@ -79,14 +79,14 @@ Chandler R. and Hepinstall-Cymerman J. (2016) Estimating the spatial scales of l
    }
 
 \examples{
-#data(dataSiland)
-#data(landSiland)
-#resE=siland(y~locvar,land=landSiland,data=dataSiland,sif="exponential",family=gaussian)
-#resE
-#resE$AIC
-#resG=siland(y~locavr,land=landSiland,data=dataSiland,sif="gaussian",family=gaussian)
-#resG
-#resG$AIC
+\donttest{
+data(dataSiland)
+data(landSiland)
+resE=siland(y~locvar,land=landSiland,data=dataSiland,sif="exponential",family=gaussian)
+resE
+resE$AIC
+}
+
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

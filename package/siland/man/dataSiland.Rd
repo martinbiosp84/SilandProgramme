@@ -29,20 +29,13 @@ Intercept=-5, locfac=3, L1 =50, L2=-50, SIF.L1=400, SIF.L2=200 and sigma=2. The 
 data(dataSiland)
 data(landSiland)
 nrow(dataSiland)
-#plot Landscape
+#Plot for landscape variables
 plot(landSiland[[1]],col=2,pch=".")
 points(landSiland[[2]],col=3,pch=".")
-#Locations of the 80 observations
+#Locations of observations
 points(dataSiland[,c("X","Y")])
 
-#Estimation
-#res=siland(loc.model=y~locfac,land=landSiland,data=dataSiland,sif="exponential",family="gaussian")
-#res
-#summary(res)
-#plotsiland(res,landSiland,dataSiland)
 
-#res=siland(loc.model=y~locfac+locvar,land=landSiland,data=dataSiland,
-#sif="exponential",family="gaussian")
 
 }
 \keyword{datasets}

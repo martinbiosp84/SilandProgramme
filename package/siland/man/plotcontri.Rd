@@ -35,10 +35,12 @@ A local model with only continuous variables can be currently considered. The fu
 \examples{
 data(landSiland)
 data(dataSiland)
-#res=siland(y~locvar,land=landSiland,data=dataSiland,sif="exponential",family=gaussian)
-#plotcontri(res,landSiland,dataSiland)
-#plotcontri(res,landSiland,dataSiland,type=1)
-#plotcontri(res,landSiland,dataSiland,numvar=2)
+res=siland(y~locvar,land=landSiland,data=dataSiland,sif="exponential",family=gaussian)
+\donttest{
+plotcontri(res,landSiland,dataSiland)
+}
+plotcontri(res,landSiland,dataSiland,type=1)
+plotcontri(res,landSiland,dataSiland,numvar=2)
 }
 
 
