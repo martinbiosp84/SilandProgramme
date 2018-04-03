@@ -1,0 +1,11 @@
+dataSiland              A simulated data set that reprsents
+                        observations.
+landSiland              A list of simulated data sets that describes
+                        landscape.
+plotcontri              Plot contributions
+plotsiland              Plot results from siland function
+print.siland            print for an object of class siland
+siland                  Estimation of spatial influence of landscape
+siland-package          Spatial Influence of Landscape
+summary.siland          The function gives a detailed summary of an
+                        object of class siland
