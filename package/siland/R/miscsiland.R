@@ -299,7 +299,7 @@ fdispRU=function(r,dmoy){
 }
 
 
-quantileE=function(q=0.9,dm,l=2000)
+quantileE=function(q=0.9,dm,l=3000)
 {  
   #Find quantile for radius distribution for exponential fis
   vv=seq(0,4*dm,length=l)
@@ -317,7 +317,7 @@ quantileE=function(q=0.9,dm,l=2000)
   }
 }
 
-quantileG=function(q=0.9,dm,l=2000)
+quantileG=function(q=0.9,dm,l=3000)
 { 
   #Find quantile for radius distribution for gaussian fis
   vv=seq(0,4*dm,length=l)
@@ -335,7 +335,7 @@ quantileG=function(q=0.9,dm,l=2000)
   }
 }
 
-quantileU=function(dm,q=0.9,l=2000)
+quantileU=function(dm,q=0.9,l=3000)
 {  
   #Find quantile for radius distribution for uniform fis
   vv=seq(0,5*dm,length=l)
@@ -550,9 +550,9 @@ plotcontri<-function(res,land,data,type=0,numvar=NULL)
 #
 #####################
 
-plotsiland<-function(res,land,data)
+plotsiland<-function(res,land,data,qsif=0.9)
 {  
-  q=0.95
+  q=qsif
   def.par <- par(no.readonly = TRUE)
   nf <- layout(matrix(c(2,0,1,3),2,2,byrow = TRUE), c(0.8,0.2), c(0.2,0.8), TRUE)
   layout.show(nf)
