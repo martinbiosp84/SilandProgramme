@@ -1,9 +1,15 @@
 plotsif<-function(d=NULL,sif="exponential" )
 {
-if(is.null(d))
-  stop("argument d has to be numeric value")
-#if((sif!="exponential") || (sif!="gaussian"))
-#  stop("argument sif has to be \"gaussian\" or \"exponential\" ")
+  #This function represents the density and the cumulative density 
+  # for a given distance d and the type of spatial influence fucntion.
+if(is.null(d)| (! is.numeric(d)))
+  stop("argument d has to be a positive numeric value")
+if(is.numeric(d) & d<0)
+  stop("argument d has to be a positive numeric value")
+  
+if((sif != "exponential") & (sif!="gaussian"))
+  stop("argument sif has to be \"gaussian\" or \"exponential\" ")
+  
 x=seq(0,4*d,length=200)
 ua=x[2]
 if(sif=="exponential")
@@ -23,5 +29,5 @@ cyr=cumsum(yr)*ua
 plot(x,cyr,type="l",xlab="radius around source",ylab="cumulative density")
 
 
-return(list(density=cbind(x=x,y=y),cumdensity=cbind(x=x,y=cyr)))
+return(invisible(list(density=cbind(x=x,y=y),cumdensity=cbind(x=x,y=cyr))))
 }

@@ -1,18 +1,6 @@
 pkgname <- "siland"
 source(file.path(R.home("share"), "R", "examples-header.R"))
 options(warn = 1)
-base::assign(".ExTimings", "siland-Ex.timings", pos = 'CheckExEnv')
-base::cat("name\tuser\tsystem\telapsed\n", file=base::get(".ExTimings", pos = 'CheckExEnv'))
-base::assign(".format_ptime",
-function(x) {
-  if(!is.na(x[4L])) x[1L] <- x[1L] + x[4L]
-  if(!is.na(x[5L])) x[2L] <- x[2L] + x[5L]
-  options(OutDec = '.')
-  format(x[1L:3L], digits = 7L)
-},
-pos = 'CheckExEnv')
-
-### * </HEADER>
 library('siland')
 
 base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
@@ -22,7 +10,6 @@ nameEx("dataSiland")
 
 flush(stderr()); flush(stdout())
 
-base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 ### Name: dataSiland
 ### Title: A simulated data set that reprsents observations.
 ### Aliases: dataSiland
@@ -44,15 +31,12 @@ points(dataSiland[,c("X","Y")])
 
 
 
-base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
-base::cat("dataSiland", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 cleanEx()
 nameEx("landSiland")
 ### * landSiland
 
 flush(stderr()); flush(stdout())
 
-base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 ### Name: landSiland
 ### Title: A list of simulated data sets that describes landscape.
 ### Aliases: landSiland
@@ -68,15 +52,12 @@ points(landSiland[[2]],col=3,pch=".")
 
 
 
-base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
-base::cat("landSiland", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 cleanEx()
 nameEx("plotcontri")
 ### * plotcontri
 
 flush(stderr()); flush(stdout())
 
-base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 ### Name: plotcontri
 ### Title: Plot contributions
 ### Aliases: plotcontri
@@ -91,15 +72,30 @@ plotcontri(res,landSiland,dataSiland,numvar=2)
 
 
 
-base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
-base::cat("plotcontri", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
+cleanEx()
+nameEx("plotsif")
+### * plotsif
+
+flush(stderr()); flush(stdout())
+
+### Name: plotsif
+### Title: Plot density and cumultive density for sif function
+### Aliases: plotsif
+
+### ** Examples
+
+##---- Should be DIRECTLY executable !! ----
+##-- ==>  Define data, use random,
+##--	or do  help(data=index)  for the standard data sets.
+
+
+
 cleanEx()
 nameEx("plotsiland")
 ### * plotsiland
 
 flush(stderr()); flush(stdout())
 
-base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 ### Name: plotsiland
 ### Title: Plot results from siland function
 ### Aliases: plotsiland
@@ -109,15 +105,56 @@ base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 
 
 
-base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
-base::cat("plotsiland", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
+cleanEx()
+nameEx("plotsiland.land")
+### * plotsiland.land
+
+flush(stderr()); flush(stdout())
+
+### Name: plotsiland.land
+### Title: Graphical spatial representation of the landscape influence
+### Aliases: plotsiland.land
+### Keywords: ~kwd1 ~kwd2
+
+### ** Examples
+
+
+data(dataSiland)
+data(landSiland)
+resE=siland(y~locvar,land=landSiland,data=dataSiland,sif="exponential",family=gaussian)
+
+plotsiland.land(x=resE,land=landSiland,data=dataSiland)
+plotsiland.land(x=resE,land=landSiland,data=dataSiland,var=1,lw=20)
+
+
+
+
+cleanEx()
+nameEx("plotsiland.sif")
+### * plotsiland.sif
+
+flush(stderr()); flush(stdout())
+
+### Name: plotsiland.sif
+### Title: Plot the estimated spatial influence functions.
+### Aliases: plotsiland.sif
+### Keywords: ~kwd1 ~kwd2
+
+### ** Examples
+
+##---- Should be DIRECTLY executable !! ----
+##-- ==>  Define data, use random,
+##--	or do  help(data=index)  for the standard data sets.
+
+
+
+
 cleanEx()
 nameEx("siland")
 ### * siland
 
 flush(stderr()); flush(stdout())
 
-base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 ### Name: siland
 ### Title: Estimation of spatial influence of landscape
 ### Aliases: siland
@@ -128,8 +165,6 @@ base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 
 
 
-base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
-base::cat("siland", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 ### * <FOOTER>
 ###
 options(digits = 7L)

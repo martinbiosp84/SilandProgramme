@@ -1,25 +1,30 @@
-plotsiland.land<-function(res,land, data, var=0,mwd=2)
+plotsiland.land<-function(x,land, data, var=0,lw=100)
 {
   #size of pixel is multiplied by 2 to reduce
   #time computing
-  w=mwd*min(dist(land[[1]][1:5,c("X","Y")]))
+  #w=mwd*min(dist(land[[1]][1:5,c("X","Y")]))
   
   xr=range(land[[1]][,"X"])
   yr=range(land[[1]][,"Y"])
-  s.xr=seq(xr[1],xr[2],by=w)
-  s.yr=seq(yr[1],yr[2],by=w)
+  lx=xr[2]-xr[1]
+  ly=yr[2]-yr[1]
+  wd=max(lx/lw,ly/lw)
+  
+  s.xr=seq(xr[1],xr[2],by=wd)
+  s.yr=seq(yr[1],yr[2],by=wd)
+  
   mgrid=expand.grid(s.xr,s.yr)
   colnames(mgrid)<-c("X","Y")
   nland=length(land)
-  nl=length(res$coefficients)
-  dres=res$coefficients[(nl-nland+1):(nl)]
+  nl=length(x$coefficients)
+  dres=x$coefficients[(nl-nland+1):(nl)]
   print("Distance computing... Wait...")
   Dist=calcdist(mgrid,land)
   print("Contribution computing... Wait..")
-  landcontri=calcscontri(distmoy=dres,Distobs=Dist,sif=res$sif,w=w)
+  landcontri=calcscontri(distmoy=dres,Distobs=Dist,sif=x$sif,w=wd)
   #landocntri is multiplied by the strength of the 
   #different landscape variables
-  coef=res$coefficients[(nl-2*nland+1):(nl-nland)]
+  coef=x$coefficients[(nl-2*nland+1):(nl-nland)]
   nr=nrow(landcontri)
   mcoef= matrix(rep(coef,nr),nr,byrow=T)
   pcontri=mcoef*landcontri
@@ -31,9 +36,11 @@ plotsiland.land<-function(res,land, data, var=0,mwd=2)
   #colorTable<- tim.colors(n=60,middle="white")
   brks<- seq(-mmax,mmax,length=61)
   
+  
   if(var==0)
   {
-  #  tmp=apply(pcontri,1,sum)
+    sumpcontri=apply(pcontri,1,sum)
+    
     matcontri=matrix(sumpcontri,nrow=length(s.xr))
     image.plot(s.xr,s.yr,matcontri,breaks=brks,col=colorTable,xlab="X",ylab="Y")
   }
@@ -42,6 +49,7 @@ plotsiland.land<-function(res,land, data, var=0,mwd=2)
      tmp=pcontri[,var] 
      matcontri=matrix(tmp,nrow=length(s.xr))
      image.plot(s.xr,s.yr,matcontri,breaks=brks,col=colorTable,xlab="X",ylab="Y")
+     points(land[[var]][,c("X",("Y"))],pch=".",cex=1.2)
       
     }
     

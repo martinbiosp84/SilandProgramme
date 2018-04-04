@@ -550,9 +550,9 @@ plotcontri<-function(res,land,data,type=0,numvar=NULL)
 #
 #####################
 
-plotsiland<-function(res,land,data,qsif=0.9)
+plotsiland<-function(res,land,data)
 {  
-  q=qsif
+  q=0.9
   def.par <- par(no.readonly = TRUE)
   nf <- layout(matrix(c(2,0,1,3),2,2,byrow = TRUE), c(0.8,0.2), c(0.2,0.8), TRUE)
   layout.show(nf)

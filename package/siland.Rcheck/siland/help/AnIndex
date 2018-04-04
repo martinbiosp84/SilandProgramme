@@ -2,7 +2,10 @@ siland-package	siland-package
 dataSiland	dataSiland
 landSiland	landSiland
 plotcontri	plotcontri
+plotsif	plotsif
 plotsiland	plotsiland
+plotsiland.land	plotsiland.land
+plotsiland.sif	plotsiland.sif
 print.siland	print.siland
 siland	siland
 summary.siland	summary.siland
