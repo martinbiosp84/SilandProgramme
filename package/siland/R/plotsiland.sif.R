@@ -18,7 +18,7 @@ plotsiland.sif<-function(x)
   valsif=x$coefficients[namesSIF]
   fismax=max(valsif)
   
-  xl=seq(0,2*fismax,length=200)
+  xl=seq(0,1.8*fismax,length=200)
   ua=xl[2]
   par(mfrow=c(nl,2))
   
