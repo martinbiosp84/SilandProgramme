@@ -165,23 +165,11 @@ NULL
 > flush(stderr()); flush(stdout())
 > 
 > ### Name: plotsiland.land
-> ### Title: Graphical spatial representation of the landscape influence
+> ### Title: Spatial representation of the landscape influence
 > ### Aliases: plotsiland.land
 > ### Keywords: ~kwd1 ~kwd2
 > 
 > ### ** Examples
-> 
-> 
-> data(dataSiland)
-> data(landSiland)
-> resE=siland(y~locvar,land=landSiland,data=dataSiland,sif="exponential",family=gaussian)
-> 
-> plotsiland.land(x=resE,land=landSiland,data=dataSiland)
-[1] "Distance computing... Wait..."
-[1] "Contribution computing... Wait.."
-> plotsiland.land(x=resE,land=landSiland,data=dataSiland,var=1,lw=20)
-[1] "Distance computing... Wait..."
-[1] "Contribution computing... Wait.."
 > 
 > 
 > 
@@ -222,11 +210,27 @@ NULL
 > 
 > 
 > 
+> cleanEx()
+> nameEx("siland.quantile")
+> ### * siland.quantile
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: siland.quantile
+> ### Title: Quantile computation for spatial influence functions
+> ### Aliases: siland.quantile
+> 
+> ### ** Examples
+> 
+> 
+> 
+> 
+> 
 > ### * <FOOTER>
 > ###
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  10.975 12.01 9.665 0 0 
+Time elapsed:  3.814 6.048 3.07 0 0 
 > grDevices::dev.off()
 null device 
           1 

@@ -112,19 +112,11 @@ nameEx("plotsiland.land")
 flush(stderr()); flush(stdout())
 
 ### Name: plotsiland.land
-### Title: Graphical spatial representation of the landscape influence
+### Title: Spatial representation of the landscape influence
 ### Aliases: plotsiland.land
 ### Keywords: ~kwd1 ~kwd2
 
 ### ** Examples
-
-
-data(dataSiland)
-data(landSiland)
-resE=siland(y~locvar,land=landSiland,data=dataSiland,sif="exponential",family=gaussian)
-
-plotsiland.land(x=resE,land=landSiland,data=dataSiland)
-plotsiland.land(x=resE,land=landSiland,data=dataSiland,var=1,lw=20)
 
 
 
@@ -158,6 +150,22 @@ flush(stderr()); flush(stdout())
 ### Name: siland
 ### Title: Estimation of spatial influence of landscape
 ### Aliases: siland
+
+### ** Examples
+
+
+
+
+
+cleanEx()
+nameEx("siland.quantile")
+### * siland.quantile
+
+flush(stderr()); flush(stdout())
+
+### Name: siland.quantile
+### Title: Quantile computation for spatial influence functions
+### Aliases: siland.quantile
 
 ### ** Examples
 

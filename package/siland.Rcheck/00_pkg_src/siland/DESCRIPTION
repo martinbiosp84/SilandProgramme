@@ -1,7 +1,7 @@
 Package: siland
 Type: Package
 Title: Spatial Influence of Landscape
-Version: 1.1
+Version: 1.2
 Date: 2017-10-29
 Author: Carpentier F. and Martin O.
 Maintainer: Martin Olivier <olivier.martin@inra.fr>
@@ -9,4 +9,4 @@ Description: Method to estimate the spatial influence scales of landscape variab
 License: GPL (>=2.0) | file LICENSE
 Depends: base, graphics, stats, lme4, sp, raster, rgdal, fields
 NeedsCompilation: no
-Packaged: 2018-04-04 09:32:52 UTC; omartin
+Packaged: 2018-05-17 13:42:58 UTC; omartin

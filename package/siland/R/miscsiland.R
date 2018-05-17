@@ -427,15 +427,22 @@ plotcontri<-function(res,land,data,type=0,numvar=NULL)
     #compute local contribution
     v=as.character(as.formula(res$loc.model)[[3]])
     localname=v[!(v=="+")]
+    Contrilocal=NULL
+    if(localname!="1")
+    {
     coefloc=matrix(rep(res$coefficients[localname],nobs),byrow=T,nrow=nobs)
     Contrilocal=data[,localname]*coefloc
     colnames(Contrilocal)=localname
+    }
+    
     #All contributions
     contri=cbind(Contrilocal,Contrilandscape)
-    Sumcontrilocal=apply(Contrilocal,2,sum)
+    Sumcontrilocal=NULL
+    if(localname!="1") Sumcontrilocal=apply(Contrilocal,2,sum)
     Sumcontriland=apply(Contrilandscape,2,sum)
     Sumcontri=cbind(Sumcontrilocal,Sumcontriland)
-    allname=c(localname,landname)
+    allname=landname
+    if(localname!="1") allname=c(localname,landname)
     
     #Color graduation max and min
     #mmin=min(min(Sumlandscpe),min(Sumlocal))
@@ -470,13 +477,16 @@ plotcontri<-function(res,land,data,type=0,numvar=NULL)
   if(type==0 & is.null(numvar))
   {
     #plot for local contribution
+    if(!is.null(Contrilocal))
+    {
     for (i in 1:ncol(Contrilocal))
       { 
       print(paste("local:",localname[i]))
       plot(data[,pp],pch=16,col=Mcolor[,i],main=paste(localname[i],": local contribution"),xlim=c(minx,maxx),ylim=c(miny,maxy),cex=cexo)
       leg.col(col.gamme, scale.col.gamme )
       readline(prompt = "Press Enter for the next graphic:\n")
-      }
+    }
+    }
     #plot for landscape contribution
     for (i in 1:ncol(Contrilandscape))
       {

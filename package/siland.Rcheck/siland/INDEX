@@ -6,11 +6,13 @@ plotcontri              Plot contributions
 plotsif                 Plot density and cumultive density for sif
                         function
 plotsiland              Plot results from siland function
-plotsiland.land         Graphical spatial representation of the
-                        landscape influence
+plotsiland.land         Spatial representation of the landscape
+                        influence
 plotsiland.sif          Plot the estimated spatial influence functions.
 print.siland            print for an object of class siland
 siland                  Estimation of spatial influence of landscape
 siland-package          Spatial Influence of Landscape
+siland.quantile         Quantile computation for spatial influence
+                        functions
 summary.siland          The function gives a detailed summary of an
                         object of class siland

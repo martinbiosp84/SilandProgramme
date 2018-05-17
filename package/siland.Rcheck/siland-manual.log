@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.10.26)  4 APR 2018 11:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.10.26)  17 MAY 2018 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -726,7 +726,7 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [6]
-Overfull \hbox (45.78088pt too wide) in paragraph at lines 291--291
+Overfull \hbox (45.78088pt too wide) in paragraph at lines 293--293
  []\T1/zi4/m/n/9 res=siland(loc.model=y~locfac,land=landSiland,data=dataSiland,
 sif="exponential",family="gaussian")[] 
  []
@@ -734,7 +734,7 @@ sif="exponential",family="gaussian")[]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-Overfull \hbox (9.73738pt too wide) in paragraph at lines 322--324
+Overfull \hbox (9.73738pt too wide) in paragraph at lines 324--326
 []\T1/ptm/m/n/10 a dataframe con-tain-ing the re-sponse vari-able and the lo-ca
 l vari-ables. The dataframe
  []
@@ -745,7 +745,7 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-LaTeX Font Info:    Try loading font information for TS1+zi4 on input line 410.
+LaTeX Font Info:    Try loading font information for TS1+zi4 on input line 412.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/inconsolata/ts1zi4.fd
@@ -756,28 +756,31 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [9] [10]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) (./Rd2.ind [11]
+) [11]
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) (./Rd2.ind [12]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 3.
 
-[12
+[13
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 550.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 550.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 597.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 597.
  (./Rd2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 550.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 550.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 597.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 597.
 Package rerunfilecheck Info: File `Rd2.out' has not changed.
-(rerunfilecheck)             Checksum: 1E1795FA73F724CABE966FC3CD2EE38C;643.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 550.
+(rerunfilecheck)             Checksum: B9B52D5273486C668D83F7B753152BC6;706.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 597.
  ) 
 Here is how much of TeX's memory you used:
- 6436 strings out of 494999
- 92110 string characters out of 6180227
+ 6448 strings out of 494999
+ 92352 string characters out of 6180227
  167034 words of memory out of 5000000
- 9446 multiletter control sequences out of 15000+600000
+ 9447 multiletter control sequences out of 15000+600000
  40963 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,5n,27p,543b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -790,10 +793,10 @@ type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (12 pages, 97009 bytes).
+Output written on Rd2.pdf (13 pages, 100221 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 91 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 252 compressed objects within 3 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

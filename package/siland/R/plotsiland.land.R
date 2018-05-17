@@ -1,8 +1,6 @@
 plotsiland.land<-function(x,land, data, var=0,lw=100)
 {
-  #size of pixel is multiplied by 2 to reduce
-  #time computing
-  #w=mwd*min(dist(land[[1]][1:5,c("X","Y")]))
+  
   
   xr=range(land[[1]][,"X"])
   yr=range(land[[1]][,"Y"])

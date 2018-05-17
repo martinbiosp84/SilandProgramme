@@ -43,14 +43,14 @@ a list with three component for graphical representation: x-axis, y-axis and a m
 siland
 }
 \examples{
-
+\donttest{
 data(dataSiland)
 data(landSiland)
 resE=siland(y~locvar,land=landSiland,data=dataSiland,sif="exponential",family=gaussian)
 
 plotsiland.land(x=resE,land=landSiland,data=dataSiland)
 plotsiland.land(x=resE,land=landSiland,data=dataSiland,var=1,lw=20)
-
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

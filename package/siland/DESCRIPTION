@@ -1,7 +1,7 @@
 Package: siland
 Type: Package
 Title: Spatial Influence of Landscape
-Version: 1.1
+Version: 1.2
 Date: 2017-10-29
 Author: Carpentier F. and Martin O.
 Maintainer: Martin Olivier <olivier.martin@inra.fr>

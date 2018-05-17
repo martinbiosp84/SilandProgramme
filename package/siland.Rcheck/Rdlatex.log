@@ -76,11 +76,11 @@ Overfull \hbox (856.65105pt too wide) in alignment at lines 52--52
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [5]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def)
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [6]
-Overfull \hbox (45.78088pt too wide) in paragraph at lines 291--291
+Overfull \hbox (45.78088pt too wide) in paragraph at lines 293--293
  []\T1/zi4/m/n/9 res=siland(loc.model=y~locfac,land=landSiland,data=dataSiland,
 sif="exponential",family="gaussian")[] 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [7]
-Overfull \hbox (9.73738pt too wide) in paragraph at lines 322--324
+Overfull \hbox (9.73738pt too wide) in paragraph at lines 324--326
 []\T1/ptm/m/n/10 a dataframe con-tain-ing the re-sponse vari-able and the lo-ca
 l vari-ables. The dataframe
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [8]
@@ -88,8 +88,9 @@ l vari-ables. The dataframe
 (/usr/share/texlive/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [9] [10]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [11]
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [12]
 No file Rd2.ind.
-[12] (./Rd2.aux)
+[13] (./Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -105,12 +106,12 @@ consolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (12 pages, 86980 bytes).
+Output written on Rd2.pdf (13 pages, 88977 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2013] (kpathsea + Thai support).
-Scanning input file Rd2.idx....done (18 entries accepted, 0 rejected).
-Sorting entries....done (86 comparisons).
-Generating output file Rd2.ind....done (38 lines written, 0 warnings).
+Scanning input file Rd2.idx....done (19 entries accepted, 0 rejected).
+Sorting entries....done (88 comparisons).
+Generating output file Rd2.ind....done (39 lines written, 0 warnings).
 Output written in Rd2.ind.
 Transcript written in Rd2.ilg.
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian)
@@ -189,19 +190,20 @@ Overfull \hbox (856.65105pt too wide) in alignment at lines 52--52
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [4]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [5]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [6]
-Overfull \hbox (45.78088pt too wide) in paragraph at lines 291--291
+Overfull \hbox (45.78088pt too wide) in paragraph at lines 293--293
  []\T1/zi4/m/n/9 res=siland(loc.model=y~locfac,land=landSiland,data=dataSiland,
 sif="exponential",family="gaussian")[] 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def)
-Overfull \hbox (9.73738pt too wide) in paragraph at lines 322--324
+Overfull \hbox (9.73738pt too wide) in paragraph at lines 324--326
 []\T1/ptm/m/n/10 a dataframe con-tain-ing the re-sponse vari-able and the lo-ca
 l vari-ables. The dataframe
 [7] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [8]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def)
 (/usr/share/texlive/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [9] [10]
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) (./Rd2.ind [11]
-[12]) (./Rd2.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [11]
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) (./Rd2.ind [12]
+[13]) (./Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -218,12 +220,12 @@ m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on Rd2.pdf (12 pages, 96924 bytes).
+Output written on Rd2.pdf (13 pages, 99448 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2013] (kpathsea + Thai support).
-Scanning input file Rd2.idx....done (18 entries accepted, 0 rejected).
-Sorting entries....done (86 comparisons).
-Generating output file Rd2.ind....done (38 lines written, 0 warnings).
+Scanning input file Rd2.idx....done (19 entries accepted, 0 rejected).
+Sorting entries....done (88 comparisons).
+Generating output file Rd2.ind....done (39 lines written, 0 warnings).
 Output written in Rd2.ind.
 Transcript written in Rd2.ilg.
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian)
@@ -302,19 +304,20 @@ Overfull \hbox (856.65105pt too wide) in alignment at lines 52--52
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [4]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [5]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [6]
-Overfull \hbox (45.78088pt too wide) in paragraph at lines 291--291
+Overfull \hbox (45.78088pt too wide) in paragraph at lines 293--293
  []\T1/zi4/m/n/9 res=siland(loc.model=y~locfac,land=landSiland,data=dataSiland,
 sif="exponential",family="gaussian")[] 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def)
-Overfull \hbox (9.73738pt too wide) in paragraph at lines 322--324
+Overfull \hbox (9.73738pt too wide) in paragraph at lines 324--326
 []\T1/ptm/m/n/10 a dataframe con-tain-ing the re-sponse vari-able and the lo-ca
 l vari-ables. The dataframe
 [7] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [8]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def)
 (/usr/share/texlive/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [9] [10]
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) (./Rd2.ind [11]
-[12]) (./Rd2.aux) )
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) [11]
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def) (./Rd2.ind [12]
+[13]) (./Rd2.aux) )
 (see the transcript file for additional information){/usr/share/texlive/texmf-d
 ist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{/usr/share/texlive/texmf-dist/fonts
 /enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsola
@@ -325,8 +328,8 @@ m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on Rd2.pdf (12 pages, 97009 bytes).
+Output written on Rd2.pdf (13 pages, 100221 bytes).
 Transcript written on Rd2.log.
 Saving output to ‘siland-manual.pdf’ ...
 Done
-You may want to clean up by 'rm -rf /tmp/RtmpbYTBiy/Rd2pdf349143a4a7ed'
+You may want to clean up by 'rm -rf /tmp/Rtmpps4Rg8/Rd2pdf238f73a9c2d5'

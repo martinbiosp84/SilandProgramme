@@ -16,8 +16,8 @@ siland.quantile(x, p = 0.95)
   \item{x}{
 an object of class siland resulting from function siland()
 }
-  \item{q}{
-a vector of quantiles
+  \item{p}{
+a vector of probabilities
 }
 }
 
@@ -33,9 +33,7 @@ O. Martin and F. Carpentier
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~
-}
+
 \examples{
 \donttest{
 data(dataSiland)
