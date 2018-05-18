@@ -492,7 +492,10 @@ plotcontri<-function(res,land,data,type=0,numvar=NULL)
       {
       print(paste("spatial:",landname[i]))
       plot(land[[i]][,pp],col=grey(0.8),pch=16,xlim=c(minx,maxx),ylim=c(miny,maxy),main=paste(landname[i],": spatial contribution"),cex=cexl)
-      points(data[,pp],pch=16,col=Mcolor[,i+ncol(Contrilocal)],cex=cexo)
+      if(!is.null(Contrilocal))
+        points(data[,pp],pch=16,col=Mcolor[,i+ncol(Contrilocal)],cex=cexo)
+      else
+        points(data[,pp],pch=16,col=Mcolor[,i],cex=cexo)
       leg.col(col.gamme, scale.col.gamme)
       readline(prompt = "Press Enter for the next graphic:\n")
     }  
@@ -500,7 +503,8 @@ plotcontri<-function(res,land,data,type=0,numvar=NULL)
   
   #plot for local contribution minus spatial contriibution
   if(type==1& is.null(numvar))
-    {      
+    {  
+    if(localname=="1") stop("No local variable in the model")
     #diffcontri=as.vector(Sumcontri[,1]-Sumcontri[,2])
     diffcontri=as.vector(abs(Sumcontri[,2])/(abs(Sumcontri[,1])+abs(Sumcontri[,2])))
     diffcontri<<-diffcontri  
