@@ -19,5 +19,10 @@ export(plotcontri)
 export(plotsif)
 export(plotsiland.land)
 export(plotsiland.sif)
+export(siland.quantile)
+export(data.gis)
+export(land.gis)
+
+
 
 
