@@ -5,7 +5,7 @@
 print for an object of class siland
 }
 \description{
-The function print an object of class siland. It gives the model used and the  estimated parameters
+The function print an object of class siland. It gives the model used and the  estimated parameters.
 }
 
 \usage{

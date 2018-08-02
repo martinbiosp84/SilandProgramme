@@ -5,8 +5,7 @@
 Plot the estimated spatial influence functions.
 }
 \description{
-Graphic representations on the form of the decrease 
-for the different influence functions estimated with the function siland().
+Graphic representations for the different influence functions estimated with the function siland().
 }
 \usage{
 plotsiland.sif(x)

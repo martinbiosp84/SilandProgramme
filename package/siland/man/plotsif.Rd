@@ -1,12 +1,12 @@
 \name{plotsif}
 \alias{plotsif}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
 Plot density and cumultive density for sif function
 }
 \description{
 The function represents the density and the cumulative density 
- for a given distance d and the shape of the spatial influence fucntion.
+ for a given distance d and a shape for the spatial influence fucntion.
 
 }
 \usage{

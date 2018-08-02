@@ -22,8 +22,8 @@ a vector of probabilities
 }
 
 \value{
-returned value is matrix. The number of rows cooresponds to the number of landscape variables, and 
-the number of columns the number of probabilities in argument p.
+returned value is matrix. The number of rows corresponds to the number of landscape variables, and 
+the number of columns to the number of probabilities in argument p.
 }
 
 \author{

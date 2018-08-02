@@ -7,7 +7,7 @@ Read OGR vector maps for observed data or measurements.
 \description{
 The function reads an OGR data source and return a dataframe. The function is developped to 
 read easily observed data or ecological measurements from OGR data source. A similar function (land.gis) 
-is available to read OGR data source that describes the landscape associated to these oberved data.
+is available to read OGR data source that describes the landscape associated to oberved data.
 }
 
 \usage{
@@ -24,7 +24,7 @@ dsn is a file name, but may also be a folder)
 a vector with the variable names that need to be extracted from OGR data.
 }
   \item{factor.var}{
-a boolean vector that indicates variables which have been considered as factor. The length has to equal to the length of varname argument.
+a boolean vector that indicates variables which have been considered as factor. The length has to be equal to the length of varname argument.
 }
 }
 

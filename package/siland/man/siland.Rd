@@ -28,7 +28,7 @@ a dataframe containing the response variable and the local variables.
 a vector indicating the starting values for the estimation of the mean distance of the spatial influence functions. The length of initSIF has to be equal to the length of list land. By default, initialisation is equal to 100 for each landscape variable.
 }
   \item{sif}{
-the family of the spatial influence function. sif can be "exponential", "gaussian" or "uniform". 
+the family of the spatial influence function. sif can be "exponential" or "gaussian". 
 }
   \item{family}{
 the distribution of response variable. family can be "gaussian", "poisson" or "binomial" and the associated link function are identity, log and logit respectively.

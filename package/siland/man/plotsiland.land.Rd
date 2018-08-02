@@ -5,7 +5,7 @@
 Spatial representation of the landscape influence
 }
 \description{
-The function gives a spatial representation of landscape variable influences. Representation can be done for each variable, or for the cumulative effects of all variables.
+The function gives a spatial representation of landscape influence for the different variables. Representation can be done for each variable, or for the cumulative effects of all variables.
 }
 \usage{
 plotsiland.land(x, land, data, var = 0, lw = 100)
@@ -13,7 +13,7 @@ plotsiland.land(x, land, data, var = 0, lw = 100)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{
-an object of class siland
+an object of class siland obtained with fucntion siland()
 }
   \item{land}{
 a list containing the location of the landscape variables. Each component of the list is a 
