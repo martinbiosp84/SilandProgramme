@@ -59,8 +59,8 @@ x<-object
   if(!is.null(x$pval))
   {
     l=length(x$pval)
-    respval=round(x$pval,5)
-    respval[x$pval==0]="<1e-16"
+    #respval=round(x$pval,5)
+    #respval[x$pval==0]="<1e-16"
     
     cat("Coefficients:\n")
     print(x$coefficients)
@@ -73,7 +73,7 @@ x<-object
     }
     cat("\n")
     cat("pvalue (L.R. Test):\n")
-    print(respval,quote=F)
+    print(signif(x$pval,3))
     cat("\n")
     cat(paste("AIC: ",round(x$AIC,2), "\t", "AIC (no landscape): ",round(x$AIC0,2),sep=""))
     cat("\n")

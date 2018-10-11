@@ -44,8 +44,9 @@ plotsiland.sif<-function(x)
   
   par(mfrow=c(1,2))
   matplot(xl,density.fis,type="l",xlab="distance from source",ylab="density",lty=1,col=1:nl)
-  legend(fismax,0.8*max(density.fis),namesLand,col=1:nl,cex=0.8,lty=1,lwd=2)
+  legend("top",legend=namesLand,col=1:nl,cex=0.8,lty=1,lwd=2)
   matplot(xl,bdensity.fis,type="l",xlab="distance from source",ylab="landscape coefficient * density",lty=1,col=1:nl)
+  legend("top",legend=namesLand,col=1:nl,cex=0.8,lty=1,lwd=2)
   abline(h=0)
   
 }

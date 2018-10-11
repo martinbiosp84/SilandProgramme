@@ -12,7 +12,7 @@ is available to read OGR data source for oberved data or measurements for an eco
 
 }
 \usage{
-land.gis(dsn, layer, varname, landname, wd = 100, extent = NULL)
+land.gis(dsn, layer, varname, landname, wd = 100, extentLand = NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -26,13 +26,13 @@ layer name (varies by driver, may be a file name without extension). From rgdal 
 name of the variable that contains the landscape features
 }
   \item{landname}{
-a vector that contains the landscape features taht is nenessary to extract from the OGR vector maps
+a vector that contains the landscape features that are necessary to extract from the OGR vector maps
 }
   \item{wd}{
-the number of pixels for x-axis and y-axis. By default, wd=100.
+the size of pixels for x-axis and y-axis. By default, wd=100.
 }
-  \item{extent}{
-an extent object. If argument extent is NULL (by default), the extent from OGR data is retained. In 
+  \item{extentLand}{
+an extent object. If argument extentLand is NULL (by default), the extent from OGR data is retained. In 
 other case, the landscape description is limited to the extent given in this argument.
 
 }

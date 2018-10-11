@@ -1,4 +1,4 @@
-land.gis<-function(dsn,layer,varname,landname,wd=100,extent=NULL)
+land.gis<-function(dsn,layer,varname,landname,wd=100,extentLand=NULL)
   #path.name  char describing path to folder containing data
   #layerland type char, name of gis layer file (shape file and database file)   without extension (.shp,.dbf)
   #containing variables landscape representing by polygons
@@ -6,7 +6,7 @@ land.gis<-function(dsn,layer,varname,landname,wd=100,extent=NULL)
   #landname vector of names of labels of landscape variable. Labels have not to be numbers.
   #wd unit of discretization of polygons of landscape files
   #return a list of matrix of discretized surface location of each vallandvar 
-  #extent : an object of class extent (see raster package)
+  #extentLand : an object of class extent (see raster package)
 {
   
   #data read
@@ -35,10 +35,10 @@ land.gis<-function(dsn,layer,varname,landname,wd=100,extent=NULL)
   lobs=list(NULL)
   for (i in 1:length(landname))
   {
-    if(is.null(extent))
-      extent=extent(landSIG)
+    if(is.null(extentLand))
+      extentLand=extent(landSIG)
     r=raster(ncol=round(extent@ymax-extent@ymin)/wd, nrow=round(extent@xmax-extent@xmin)/wd)
-    extent(r)=extent
+    extent(r)=extentLand
     
     rland=rasterize(landSIG,r,landname[i],fun='max')
     rlandpos=as.data.frame(rasterToPoints(rland))

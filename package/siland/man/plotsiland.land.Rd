@@ -8,7 +8,7 @@ Spatial representation of the landscape influence
 The function gives a spatial representation of landscape influence for the different variables. Representation can be done for each variable, or for the cumulative effects of all variables.
 }
 \usage{
-plotsiland.land(x, land, data, var = 0, lw = 100)
+plotsiland.land(x, land, data, var = 0, lw = 100, xlim=NULL, ylim=NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -31,6 +31,13 @@ representation gives the cumulative effects for all landscape variables.
   \item{lw}{
 the number of pixels on x-axis and y-axis for the graphical representation. A too high value can lead to memory allocation problems. By default lw=100.
 }
+\item{xlim}{
+a vector of two numbers (min and max on x-aixs) to give a representation for a sub-region. By default, xlim=NULL.
+}
+\item{ylim}{
+a vector of two numbers (min and max on y-axis) to give a representation for a sub-region. By default, ylim=NULL.
+}
+
 }
 
 \value{

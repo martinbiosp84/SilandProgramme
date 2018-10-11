@@ -1,12 +1,23 @@
-plotsiland.land<-function(x,land, data, var=0,lw=100)
+plotsiland.land<-function(x,land, data, var=0,lw=100,xlim=NULL,ylim=NULL)
 {
+  #nsif=ncol(x$landcontri)
+  #ll=length(x$coefficients)
+  #valsif=x$coefficients[(ll-nsif+1):ll]
+  w=min(dist(land[[1]][1:10,c("X","Y")]))
+  rrx=unlist(lapply(land,function(x){range(x[,"X"])}))
+  rry=unlist(lapply(land,function(x){range(x[,"Y"])}))
   
+  xr=range(rrx)
+  yr=range(rry)
   
-  xr=range(land[[1]][,"X"])
-  yr=range(land[[1]][,"Y"])
+  if(!is.null(xlim))
+    xr=xlim
+  if(!is.null(ylim))
+    yr=ylim
+  
   lx=xr[2]-xr[1]
   ly=yr[2]-yr[1]
-  wd=max(lx/lw,ly/lw)
+  wd=round(max(lx/lw,ly/lw),0)
   
   s.xr=seq(xr[1],xr[2],by=wd)
   s.yr=seq(yr[1],yr[2],by=wd)
@@ -16,10 +27,16 @@ plotsiland.land<-function(x,land, data, var=0,lw=100)
   nland=length(land)
   nl=length(x$coefficients)
   dres=x$coefficients[(nl-nland+1):(nl)]
+  landsel=list(NULL)
+  for(k in 1:length(land))
+  {
+    sel=(land[[k]][,"X"]>min(xr)) & (land[[k]][,"X"]<max(xr)) & (land[[k]][,"Y"]>min(yr)) & (land[[k]][,"Y"]<max(yr) )
+    landsel[[k]]=land[[k]][sel,]
+  }
   print("Distance computing... Wait...")
-  Dist=calcdist(mgrid,land)
+  Dist=calcdist(mgrid,landsel)
   print("Contribution computing... Wait..")
-  landcontri=calcscontri(distmoy=dres,Distobs=Dist,sif=x$sif,w=wd)
+  landcontri=calcscontri(distmoy=dres,Distobs=Dist,sif=x$sif,w=w)
   #landocntri is multiplied by the strength of the 
   #different landscape variables
   coef=x$coefficients[(nl-2*nland+1):(nl-nland)]
@@ -41,6 +58,7 @@ plotsiland.land<-function(x,land, data, var=0,lw=100)
     
     matcontri=matrix(sumpcontri,nrow=length(s.xr))
     image.plot(s.xr,s.yr,matcontri,breaks=brks,col=colorTable,xlab="X",ylab="Y")
+    points(data[,c("X","Y")],pch=16,cex=0.8)
   }
     else
     {
@@ -48,7 +66,7 @@ plotsiland.land<-function(x,land, data, var=0,lw=100)
      matcontri=matrix(tmp,nrow=length(s.xr))
      image.plot(s.xr,s.yr,matcontri,breaks=brks,col=colorTable,xlab="X",ylab="Y")
      points(land[[var]][,c("X",("Y"))],pch=".",cex=1.2)
-      
+     points(data[,c("X","Y")],pch=16,cex=0.8)
     }
     
 invisible(list(x=s.xr,y=s.yr,mat=matcontri))
